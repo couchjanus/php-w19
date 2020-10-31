@@ -29,15 +29,6 @@ init();
 setErrorLogging();
 // error_log("Hello Log!");
 
-// function getURI() {
-//     if (isset($_SERVER['REQUEST_URI']) and !empty($_SERVER['REQUEST_URI'])){
-//         // var_dump(debug_backtrace());
-//         // debug_print_backtrace();
-//         return trim($_SERVER['REQUEST_URI'], '/');
-//     }
-//  }
-
-
 function render($template, $data = null) {
     if ( $data ) {
         extract($data);
@@ -60,4 +51,28 @@ function conf($mix) {
         return false;
     }
 }
+
+function dd($str, $mix){
+    echo "<pre>";
+    echo $str;
+    var_dump($mix);
+    echo "<pre>";
+}
+
+// $url = $_SERVER['REQUEST_URI'];
+// dd('URL: ', parse_url($url));
+// dd('PHP_URL_SCHEME: ', parse_url($url, PHP_URL_SCHEME));
+// dd('PHP_URL_USER: ', parse_url($url, PHP_URL_USER));
+// dd('PHP_URL_PASS: ', parse_url($url, PHP_URL_PASS));
+// dd('PHP_URL_HOST: ', parse_url($url, PHP_URL_HOST));
+// dd('PHP_URL_PORT: ', parse_url($url, PHP_URL_PORT));
+// dd('PHP_URL_PATH: ', parse_url($url, PHP_URL_PATH));
+// dd('PHP_URL_QUERY: ', parse_url($url, PHP_URL_QUERY));
+// dd('PHP_URL_FRAGMENT: ', parse_url($url, PHP_URL_FRAGMENT));
+
+// $uri = urldecode(
+//     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
+// );
+// var_dump($uri);
+
 require_once CORE.'/Router.php';

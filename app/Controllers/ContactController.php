@@ -2,21 +2,18 @@
 
 $config = require_once CONFIG.'/db.php';
 $address = conf('contacts');
+
 $title = 'Contact us';
+$addressTitle = 'Our Address';
 $comments = [];
 $error = null;
-
-// var_dump($config);
-// var_dump($config['db']);
-// var_dump($config['db']['DB_NAME']);
-
 
 if (!empty($_POST)) {
     if ( !$_POST['username'] and !$_POST['email'] and !$_POST['message']){
         $error = "Please complete all the fields";
     } else {
         try {
-            $conn = mysqli_connect(HOST, DBUSER, DBPASSWORD, DATABASE);
+            $conn = mysqli_connect($config['db']['DB_HOST'], $config['DB_USERNAME'], $config['DB_PASSWORD'], $config['db']['DB_NAME']);
             try {
                 if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === FALSE) {
                   throw new Exception($_POST['email']);
@@ -46,7 +43,7 @@ if (!empty($_POST)) {
 
 // ===================================================
 try {
-    $conn = mysqli_connect($config['db']['DB_HOST'], $config['DB_USERNAME'], $config['DB_PASSWORD'], $config['db']['DB_Name']);
+    $conn = mysqli_connect($config['db']['DB_HOST'], $config['DB_USERNAME'], $config['DB_PASSWORD'], $config['db']['DB_NAME']);
     $sql = "SELECT * FROM guestbook";
     $result = mysqli_query($conn, $sql);
     $resCount = mysqli_num_rows($result);
@@ -65,6 +62,7 @@ try {
 render('contact/index', [
     'title' => $title,
     'address' => $address,
+    'addressTitle'=>$addressTitle,
     'result' => $result,
     'comments' => $comments,
     'error' => $error,

@@ -11,13 +11,17 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <?php if (isset($address)):?>
-                    
-                    <label><i class="fas fa-home"></i>: <?php echo $address[0]['street'];?></label>
-                    <label><i class="fas fa-envelope-square"></i>: <?php echo $address[0]['email'];?></label>
-                <label><i class="fas fa-phone-square-alt"></i>: <?php echo $address[0]['mobile'];?></label>
-                <label><i class="fas fa-map-marker-alt"></i>: <?php echo $address[0]['city'];?></label>
-                <label><i class="fas fa-university"></i>: <?php echo $address[0]['country'];?></label>
-                <?php endif;?>
+                    <?php foreach ($address as $key => $value) {?>
+                                          
+                    <label><i class="fas fa-home"></i>: <?php echo $value['street'];?></label>
+                    <label><i class="fas fa-envelope-square"></i>: <?php echo $value['email'];?></label>
+                <label><i class="fas fa-phone-square-alt"></i>: <?php echo $value['mobile'];?></label>
+                <label><i class="fas fa-map-marker-alt"></i>: <?php echo $value['city'];?></label>
+                <label><i class="fas fa-university"></i>: <?php echo $value['country'];?></label>
+                <?php 
+                    }
+                    endif;
+                ?>
             </form>
         </div>
         <div class="form-container contact-container">
@@ -46,7 +50,7 @@
                 if (isset($comments)):
                     printf("<h2>There Are %d Comments In Guest Book</h2>", count($comments));       
                     foreach ($comments as $key => $value) {
-                        echo("<div class='top'><b>User ".$value[0]." </b> <a href='mailto:".$value[1]."'>".$value[1]."</a>  Added this: </div><div class='comment'>".strip_tags($value[2])."</div>"."<p>At ".strip_tags($value[3])."</p><hr>");
+                        echo("<div class='top'><b>User ".$value['username']." </b> <a href='mailto:".$value['email']."'>".$value['email']."</a>  Added this: </div><div class='comment'>".strip_tags($value['message'])."</div>"."<p>At ".strip_tags($value['created_at'])."</p><hr>");
                     }
                 else:
                     printf("<h2 style='color: #%x%x%x'>No Comments Yet...</h2>", 165, 27, 45);

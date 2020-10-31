@@ -1,6 +1,7 @@
 <?php
 
 define('ROOT', realpath(__DIR__.'/../'));
+const APP_ENV = 'local';
 
 const APP = ROOT.'/app';
 const VIEWS = ROOT.'/app/Views';
