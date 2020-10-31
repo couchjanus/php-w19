@@ -1,13 +1,4 @@
 <?php
-/**
- *  @return string текущий адрес запроса 
- **/ 
-// function getURI()
-// {
-//     if (isset($_SERVER['REQUEST_URI']) and !empty($_SERVER['REQUEST_URI'])) {
-//         return trim($_SERVER['REQUEST_URI'], '/');
-//     }
-// }
 
 require_once realpath(__DIR__.'/../config').'/app.php';
 function init() {
@@ -38,13 +29,13 @@ init();
 setErrorLogging();
 // error_log("Hello Log!");
 
-function getURI() {
-    if (isset($_SERVER['REQUEST_URI']) and !empty($_SERVER['REQUEST_URI'])){
-        // var_dump(debug_backtrace());
-        // debug_print_backtrace();
-        return trim($_SERVER['REQUEST_URI'], '/');
-    }
- }
+// function getURI() {
+//     if (isset($_SERVER['REQUEST_URI']) and !empty($_SERVER['REQUEST_URI'])){
+//         // var_dump(debug_backtrace());
+//         // debug_print_backtrace();
+//         return trim($_SERVER['REQUEST_URI'], '/');
+//     }
+//  }
 
 
 function render($template, $data = null) {
@@ -58,39 +49,15 @@ function render($template, $data = null) {
 function conf($mix) {
     $url = CONFIG."/".$mix.".json";
     try{
-        //Attempt to open json file.
         $jsonFile = file_get_contents($url);
-        //If fopen returns a boolean FALSE value, then an error has occurred.
         if($jsonFile === false){
             throw new Exception('Could not open json file!');
         }
         return json_decode($jsonFile, TRUE);
     } 
-    //CATCH the exception if something goes wrong.
     catch (Exception $ex) {
-        //Print out the exception message.
         error_log($ex->getMessage());
-        // echo $ex->getMessage();
         return false;
     }
 }
-     
-switch (getURI()) {
-    case '':
-        require_once CONTROLLERS.'/HomeController.php';
-        break;
-    case 'about':
-        require_once CONTROLLERS.'/AboutController.php';
-        break;
-    case 'contact':
-        require_once CONTROLLERS.'/ContactController.php';
-        break;
-    case 'test':
-            require_once CONTROLLERS.'/TestController.php';
-            break;
-    case 'config':
-            require_once CONTROLLERS.'/ConfigController.php';
-            break;
-    default:
-        require_once CONTROLLERS.'/ErrorController.php';
-}
+require_once CORE.'/Router.php';
