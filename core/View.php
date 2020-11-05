@@ -8,8 +8,13 @@
  * @license    http://opensource.org/licenses/MIT The MIT License (MIT)
  * @author     Janus Nic <couchjanus@gmail.com>
  */
-
 class View {
+    
+    public $controller;
+
+    public function __construct(Controller $controller){
+        $this->controller = $controller;
+    }
 
     /**
      * Renders and returns output for the given file with its array of data.
@@ -20,7 +25,6 @@ class View {
      * @return string  Rendered output
      *
      */
-        
     public function render($template, $data = null, $layout='site', $error = false)
     {
         if(!empty($data)) {

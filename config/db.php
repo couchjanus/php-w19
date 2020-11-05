@@ -1,11 +1,20 @@
 <?php
+/**
+ * Данные для подключения к БД
+ */
 return [
     'db' => [
-        'DB_NAME' => 'shop',
-        'DB_HOST'    => 'localhost',
-        'DB_CHARSET' => 'utf8mb4',
-        'DB_PORT' => 3306,
+        'driver' => 'mysql',
+        'dbname' => 'shop',
+        'host'    => 'localhost',
+        'charset' => 'utf8mb4',
+        'port' => 3306,
     ],
-    'DB_USERNAME' => 'root',
-    'DB_PASSWORD' => 'ghbdtn',
+    'user' => 'root',
+    'password' => 'ghbdtn',
+    'options' => [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
+        PDO::ATTR_EMULATE_PREPARES   => false,
+    ]
 ];  

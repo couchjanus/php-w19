@@ -1,12 +1,12 @@
 <?php
 // DashboardController.php
-// require_once CORE.'/Controller.php';
+require_once CORE.'/Controller.php';
 
-class DashboardController
+class DashboardController extends Controller
 {
    public function index()
    {
         $title = 'Dashboard';
-        render('admin/index', ['title'=>$title], 'admin');
+        $this->view->render('admin/index', ['title'=>$title], 'admin');
    }
 }
