@@ -17,6 +17,11 @@
                     <tr>
                     <td><?=$category->id;?></td>
                     <td><?=$category->name;?></td>
+                    <td>
+                      <a href="/admin/categories/show/<?=$category->id?>" class="btn btn-default"><span data-feather="eye"></span> View</a>
+                      <a href="/admin/categories/edit/<?=$category->id?>" class="btn btn-primary"><span data-feather="edit"></span> Edit</a>
+                      <a href="/admin/categories/delete/<?=$category->id?>" class="btn btn-danger"><span data-feather="delete"></span> Delete</a>
+                    </td>
                     </tr>
                 <?php endforeach;?>
               </tbody>

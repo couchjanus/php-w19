@@ -1,5 +1,6 @@
 <?php
 require_once CORE.'/Request.php';
+require_once CORE.'/Router.php';
 
 class App {
 
@@ -31,11 +32,9 @@ class App {
         ini_set('error_log', LOGS . '/error_log.php');
     }
 
-
     public function run(){
         $this->init();
         $this->setErrorLogging();
-
-        require_once CORE.'/Router.php';
+        (new Router($this->request))->run();
     }
 }

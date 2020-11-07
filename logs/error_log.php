@@ -1130,3 +1130,885 @@ Stack trace:
 [05-Nov-2020 15:26:20 Europe/Kiev] PHP   4. require_once() /home/janus/www/php-w19/core/App.php:19
 [05-Nov-2020 15:26:20 Europe/Kiev] PHP   5. initController() /home/janus/www/php-w19/core/Router.php:50
 [05-Nov-2020 15:26:20 Europe/Kiev] PHP   6. CategoryController->store() /home/janus/www/php-w19/core/Router.php:41
+[07-Nov-2020 15:59:05 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Router::__construct(), 0 passed in /home/janus/www/php-w19/core/App.php on line 38 and exactly 1 expected in /home/janus/www/php-w19/core/Router.php:53
+Stack trace:
+#0 /home/janus/www/php-w19/core/App.php(38): Router->__construct()
+#1 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#2 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 53
+[07-Nov-2020 15:59:52 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Router::__construct(), 0 passed in /home/janus/www/php-w19/core/App.php on line 38 and exactly 1 expected in /home/janus/www/php-w19/core/Router.php:53
+Stack trace:
+#0 /home/janus/www/php-w19/core/App.php(38): Router->__construct()
+#1 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#2 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 53
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP Notice:  Undefined variable: id in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 44
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   6. CategoryController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/edit.php on line 9
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   6. CategoryController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:45
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/edit.php on line 12
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   6. CategoryController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:45
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/edit.php on line 17
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   6. CategoryController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:45
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 16:34:20 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP Notice:  Undefined variable: id in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 44
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   6. CategoryController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/edit.php on line 9
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   6. CategoryController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:45
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/edit.php on line 12
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   6. CategoryController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:45
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/edit.php on line 17
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   6. CategoryController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:45
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 16:35:18 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[07-Nov-2020 16:39:34 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-w19/app/Views/admin/categories/show.php): failed to open stream: No such file or directory in /home/janus/www/php-w19/app/Views/layouts/admin.php on line 19
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   6. CategoryController->show() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:38
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-w19/app/Views/admin/categories/show.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-w19/app/Views/layouts/admin.php on line 19
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   6. CategoryController->show() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:38
+[07-Nov-2020 16:41:17 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 16:51:02 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class CategoryController could not be converted to string in /home/janus/www/php-w19/core/Router.php:93
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 93
+[07-Nov-2020 16:51:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Category::getByPrimaryKey() in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:66
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(101): CategoryController->delete()
+#1 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#2 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#3 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#4 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 66
+[07-Nov-2020 16:53:41 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/app/Models/Category.php on line 9 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Models/Category.php(9): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(66): Category->__construct()
+#2 /home/janus/www/php-w19/core/Router.php(101): CategoryController->delete()
+#3 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 16:53:48 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/app/Models/Category.php on line 9 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Models/Category.php(9): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(66): Category->__construct()
+#2 /home/janus/www/php-w19/core/Router.php(101): CategoryController->delete()
+#3 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 16:53:52 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/app/Models/Category.php on line 9 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Models/Category.php(9): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(66): Category->__construct()
+#2 /home/janus/www/php-w19/core/Router.php(101): CategoryController->delete()
+#3 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 16:53:58 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/app/Models/Category.php on line 9 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Models/Category.php(9): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(66): Category->__construct()
+#2 /home/janus/www/php-w19/core/Router.php(101): CategoryController->delete()
+#3 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 16:54:02 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/app/Models/Category.php on line 9 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Models/Category.php(9): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(66): Category->__construct()
+#2 /home/janus/www/php-w19/core/Router.php(101): CategoryController->delete()
+#3 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 18:01:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:16
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(13): Model::all()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->index()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 16
+[07-Nov-2020 18:05:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:16
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(13): Model::all()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->index()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 16
+[07-Nov-2020 18:09:04 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:16
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(13): Model::all()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->index()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 16
+[07-Nov-2020 18:11:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:16
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(13): Model::all()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->index()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 16
+[07-Nov-2020 18:11:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:16
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(13): Model::all()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->index()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 16
+[07-Nov-2020 18:12:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:17
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(13): Model::all()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->index()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 17
+[07-Nov-2020 18:14:08 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:18
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(13): Model::all()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->index()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 18
+[07-Nov-2020 18:15:59 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/core/Model.php on line 12 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Brand.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(13): Brand->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): BrandController->index()
+#4 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-w19/app/Views/admin/btands/create.php): failed to open stream: No such file or directory in /home/janus/www/php-w19/app/Views/layouts/admin.php on line 19
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   6. BrandController->create() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php:20
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-w19/app/Views/admin/btands/create.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-w19/app/Views/layouts/admin.php on line 19
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   6. BrandController->create() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php:20
+[07-Nov-2020 18:19:28 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[07-Nov-2020 18:22:52 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Brand::save() in /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php:26
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(101): BrandController->store()
+#1 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#2 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#3 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#4 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php on line 26
+[07-Nov-2020 18:23:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Brand::save() in /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php:26
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(101): BrandController->store()
+#1 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#2 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#3 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#4 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php on line 26
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Warning:  array_keys() expects parameter 1 to be array, string given in /home/janus/www/php-w19/core/Model.php on line 35
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   6. BrandController->store() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   7. Model::save() /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php:26
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   8. array_keys() /home/janus/www/php-w19/core/Model.php:35
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Warning:  implode(): Invalid arguments passed in /home/janus/www/php-w19/core/Model.php on line 35
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   6. BrandController->store() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   7. Model::save() /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php:26
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   8. implode() /home/janus/www/php-w19/core/Model.php:35
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Warning:  array_keys() expects parameter 1 to be array, string given in /home/janus/www/php-w19/core/Model.php on line 36
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   6. BrandController->store() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   7. Model::save() /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php:26
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   8. array_keys() /home/janus/www/php-w19/core/Model.php:36
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Warning:  implode(): Invalid arguments passed in /home/janus/www/php-w19/core/Model.php on line 36
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   6. BrandController->store() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   7. Model::save() /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php:26
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP   8. implode() /home/janus/www/php-w19/core/Model.php:36
+[07-Nov-2020 18:23:56 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:38
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(26): Model::save()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->store()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 38
+[07-Nov-2020 18:25:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:38
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(26): Model::save()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->store()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 38
+[07-Nov-2020 20:59:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Connection::connect() in /home/janus/www/php-w19/core/Model.php:60
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(57): Model->destroy()
+#1 /home/janus/www/php-w19/core/Router.php(101): BrandController->delete()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 60
+[07-Nov-2020 21:01:01 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/core/Model.php on line 12 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Brand.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/BrandController.php(63): Brand->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): BrandController->delete()
+#4 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 21:13:41 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/core/Model.php on line 12 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Brand.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(23): Brand->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): ProductController->create()
+#4 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 21:14:45 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/core/Model.php on line 12 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Brand.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(23): Brand->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): ProductController->create()
+#4 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 21:17:14 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/core/Model.php on line 12 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Brand.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(23): Brand->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): ProductController->create()
+#4 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 21:32:16 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Connection::__construct() must be of the type array, bool given, called in /home/janus/www/php-w19/app/Models/Category.php on line 9 and defined in /home/janus/www/php-w19/core/Connection.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Models/Category.php(9): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(49): Category->__construct()
+#2 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#3 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 9
+[07-Nov-2020 21:39:06 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Connection::__construct : ERROR: no database connection
+ in /home/janus/www/php-w19/core/Connection.php:17
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Product.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(48): Product->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#4 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 17
+[07-Nov-2020 21:40:03 Europe/Kiev] PHP Fatal error:  Uncaught Exception: Connection::__construct : ERROR: no database connection
+ in /home/janus/www/php-w19/core/Connection.php:17
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Product.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(48): Product->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#4 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 17
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type bool in /home/janus/www/php-w19/core/Connection.php on line 23
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 35
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP  10. Connection->makeDsn() /home/janus/www/php-w19/core/Connection.php:23
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in /home/janus/www/php-w19/core/Connection.php on line 38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP  10. Connection->makeDsn() /home/janus/www/php-w19/core/Connection.php:23
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 24
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 24
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 25
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 25
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 26
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 26
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:41:39 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: invalid data source name in /home/janus/www/php-w19/core/Connection.php:29
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Product.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(48): Product->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#4 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 29
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type bool in /home/janus/www/php-w19/core/Connection.php on line 21
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 33
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP  10. Connection->makeDsn() /home/janus/www/php-w19/core/Connection.php:21
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in /home/janus/www/php-w19/core/Connection.php on line 36
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP  10. Connection->makeDsn() /home/janus/www/php-w19/core/Connection.php:21
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 22
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 22
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 23
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 23
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 24
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 24
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:44:30 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: invalid data source name in /home/janus/www/php-w19/core/Connection.php:27
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Product.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(48): Product->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#4 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 27
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Notice:  Undefined index: db in /home/janus/www/php-w19/core/Connection.php on line 21
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 33
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP  10. Connection->makeDsn() /home/janus/www/php-w19/core/Connection.php:21
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in /home/janus/www/php-w19/core/Connection.php on line 36
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP  10. Connection->makeDsn() /home/janus/www/php-w19/core/Connection.php:21
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 22
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 22
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 23
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 23
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Notice:  Undefined variable: config in /home/janus/www/php-w19/core/Connection.php on line 24
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type null in /home/janus/www/php-w19/core/Connection.php on line 24
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP   9. Connection->__construct() /home/janus/www/php-w19/core/Model.php:12
+[07-Nov-2020 21:46:17 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: invalid data source name in /home/janus/www/php-w19/core/Connection.php:27
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(12): Connection->__construct()
+#1 /home/janus/www/php-w19/app/Models/Product.php(11): Model->__construct()
+#2 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(48): Product->__construct()
+#3 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#4 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#5 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#6 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#7 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-w19/core/Connection.php on line 27
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP Warning:  Creating default object from empty value in /home/janus/www/php-w19/core/Model.php on line 13
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP   7. Product->__construct() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP   8. Product->__construct() /home/janus/www/php-w19/app/Models/Product.php:11
+[07-Nov-2020 21:51:35 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to protected Connection::__construct() from context 'Category' in /home/janus/www/php-w19/app/Models/Category.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(49): Category->__construct()
+#1 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/app/Models/Category.php on line 9
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP Notice:  Undefined property: Connection::$pdo in /home/janus/www/php-w19/core/Model.php on line 26
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP Stack trace:
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP   6. ProductController->edit() /home/janus/www/php-w19/core/Router.php:101
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP   7. Product->getByPK() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:48
+[07-Nov-2020 21:52:29 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/janus/www/php-w19/core/Model.php:26
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(48): Model->getByPK()
+#1 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 26
+[07-Nov-2020 21:53:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to protected Connection::__construct() from context 'Category' in /home/janus/www/php-w19/app/Models/Category.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(49): Category->__construct()
+#1 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/app/Models/Category.php on line 9
+[07-Nov-2020 21:54:10 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to protected Connection::__construct() from context 'Category' in /home/janus/www/php-w19/app/Models/Category.php:9
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(49): Category->__construct()
+#1 /home/janus/www/php-w19/core/Router.php(101): ProductController->edit()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/app/Models/Category.php on line 9

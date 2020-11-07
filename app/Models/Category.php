@@ -17,26 +17,34 @@ class Category
     public function save($name, $status){
         $stmt = $this->conn->pdo->prepare("INSERT INTO categories (name, status) VALUES (?, ?)");
         $sql = "INSERT INTO categories (name, status) VALUES (?, ?)";
-        // $stmt->bindParam(1, $name);
-        // $stmt->bindParam(2, $status);
         $stmt->execute([$name, $status]);
         return $this->conn->pdo->lastInsertId();
     }
 
-    /**
-     * Возвращает Список категорий, 
-     * у которых статус отображения = 1  
-     */
-
-    public static function getCategories()
-    {
-        $connection = new Connection(require_once DB_CONFIG_FILE);
-        $stmt = $connection->pdo->query(
-            "SELECT id, name FROM categories
-            WHERE status = 1
-            ORDER BY name ASC"
-        );
-        $categories = $stmt->fetchAll(PDO::FETCH_OBJ);
-        return $categories;
+    public function getByPK($id) {
+        $stmt = $this->conn->pdo->prepare("SELECT * FROM categories WHERE id = ?");
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_OBJ);
     }
+
+    public function destroy($id){
+        $stmt = $this->conn->pdo->prepare("DELETE FROM categories WHERE id = ? LIMIT 1");
+        $stmt->execute([$id]);
+    }
+    
+    public function update($id, $name, $status){
+        $stmt = $this->conn->pdo->prepare("UPDATE categories SET name = ?, status = ? WHERE id = ?");
+        $stmt->execute([$name, $status, $id]);
+    }
+
 }
+
+
+// require_once CORE.'/Model.php';
+
+// class Category extends Model
+// {
+//     protected static $table = 'categories';
+//     protected static $pk = 'id';
+
+// }

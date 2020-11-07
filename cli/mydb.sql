@@ -46,12 +46,22 @@ CREATE TABLE `products` (
   `status` tinyint(1) NOT NULL,
   `category_id` int(11) unsigned DEFAULT NULL,
   `price` float unsigned NOT NULL,
-  `brand` varchar(255) NOT NULL,
+  `brand_id` int(11) unsigned DEFAULT NULL,
   `description` text NOT NULL,
   `is_new` tinyint(1) NOT NULL DEFAULT '1',
   `is_recommended` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
+
+DROP TABLE IF EXISTS `brands`;
+CREATE TABLE `brands` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `description` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- 2020-10-08 10:30:13
