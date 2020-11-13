@@ -6,12 +6,21 @@ class Request
     public $query = [];
    
     public function __construct() {
-        // $this->data = $_REQUEST;
-        // $this->query = $_GET;
-        // при создании объекта запроса мы пропускаем все данные
-        // через фильтр-функцию для очистки параметров от нежелательных данных
-        // clear data from dangerous characters
-        $this->data = $this->cleanInput($_REQUEST);
+        // $this->data = $this->cleanInput($_REQUEST);
+        $this->data = $this->mergeData($_REQUEST, $_FILES);   
+    }
+
+    /**
+     * merge post and files data
+     * You shouldn't have two fields with the same 'name' attribute in $_POST & $_FILES
+     *
+     * @param  array $post
+     * @param  array $files
+     * @return array the merged array
+     */
+    private function mergeData(array $post, array $files){
+        $post = $this->cleanInput($post);
+        return array_merge($files, $post);
     }
 
     public function isSSL(){

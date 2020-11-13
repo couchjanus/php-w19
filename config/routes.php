@@ -13,6 +13,11 @@ return [
    'admin/categories/update' => 'Admin\CategoryController@update',
    'admin/categories/delete/{id}' => 'Admin\CategoryController@delete',
 
+   'api/categories/insert_image' => 'Admin\CategoryController@insertImage',
+   'api/products/insert_image' => 'Admin\ProductController@insertImage',
+   
+
+
    'admin/brands' => 'Admin\BrandController@index',
    'admin/brands/create' => 'Admin\BrandController@create',
    'admin/brands/stote' => 'Admin\BrandController@store',
@@ -29,6 +34,12 @@ return [
    'admin/products/update' => 'Admin\ProductController@update',
    'admin/products/delete/{id}' => 'Admin\ProductController@delete',
    
+   'api/products' => 'HomeController@getProducts',
+   'api/products/{id}' => 'HomeController@getProduct',
+   'api/product/{id}'=> 'HomeController@getProductItem',
+   'api/categories'=> 'HomeController@getCategories',
+   'api/categories/{id}'=> 'HomeController@getProductsByCategory',
+
    //Главаня страница
    '' => 'HomeController@index', 
 ];

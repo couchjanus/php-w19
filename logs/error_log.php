@@ -2012,3 +2012,985 @@ Stack trace:
 #5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
 #6 {main}
   thrown in /home/janus/www/php-w19/app/Models/Category.php on line 9
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-w19/app/Views/blog/index.php): failed to open stream: No such file or directory in /home/janus/www/php-w19/app/Views/layouts/site.php on line 10
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   6. include_once() /home/janus/www/php-w19/core/Router.php:88
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   7. render() /home/janus/www/php-w19/app/Controllers/BlogController.php:4
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   8. include() /home/janus/www/php-w19/bootstrap/app.php:9
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-w19/app/Views/blog/index.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-w19/app/Views/layouts/site.php on line 10
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   6. include_once() /home/janus/www/php-w19/core/Router.php:88
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   7. render() /home/janus/www/php-w19/app/Controllers/BlogController.php:4
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP   8. include() /home/janus/www/php-w19/bootstrap/app.php:9
+[11-Nov-2020 15:11:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'BlogController' not found in /home/janus/www/php-w19/core/Router.php:89
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 89
+[11-Nov-2020 15:11:51 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Category::save(), 1 passed in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 50 and exactly 2 expected in /home/janus/www/php-w19/app/Models/Category.php:17
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(50): Category->save()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->store()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/app/Models/Category.php on line 17
+[11-Nov-2020 15:12:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Connection::connect() in /home/janus/www/php-w19/core/Model.php:12
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(50): Model->__construct()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->store()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 12
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP Notice:  Undefined index: status in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 68
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   6. CategoryController->insertImage() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP Notice:  Undefined index: name in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 82
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP   6. CategoryController->insertImage() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 18:21:09 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /home/janus/www/php-w19/core/Model.php:39
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(39): PDOStatement->execute()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(82): Model->save()
+#2 /home/janus/www/php-w19/core/Router.php(101): CategoryController->insertImage()
+#3 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 39
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:25 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:28 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:32 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:34 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:37 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:39 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:41 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:48 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/admin/categories/delete.php on line 5
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:67
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   6. CategoryController->delete() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:126
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[11-Nov-2020 23:42:51 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/admin.php:19
+[11-Nov-2020 23:43:50 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Picture::insert() in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:87
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(101): CategoryController->insertImage()
+#1 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#2 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#3 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#4 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 87
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP Deprecated:  Non-static method Model::save() should not be called statically in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 87
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP   6. CategoryController->insertImage() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:44:50 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:67
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(87): Model::lastId()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->insertImage()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 67
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP Deprecated:  Non-static method Model::save() should not be called statically in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 87
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP   6. CategoryController->insertImage() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:49:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Cannot access protected property Category::$table in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:87
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(101): CategoryController->insertImage()
+#1 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#2 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#3 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#4 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 87
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP Deprecated:  Non-static method Model::save() should not be called statically in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 87
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP Stack trace:
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP   6. CategoryController->insertImage() /home/janus/www/php-w19/core/Router.php:101
+[11-Nov-2020 23:50:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:38
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(87): Model::save()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->insertImage()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 38
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP Notice:  Trying to access array offset on value of type bool in /home/janus/www/php-w19/core/Model.php on line 69
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP   6. CategoryController->insertImage() /home/janus/www/php-w19/core/Router.php:101
+[12-Nov-2020 00:03:59 Europe/Kiev] PHP   7. Category->lastId() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:86
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP Notice:  Undefined variable: id in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 88
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP   6. CategoryController->fetchImage() /home/janus/www/php-w19/core/Router.php:101
+[12-Nov-2020 00:46:51 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:73
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(88): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 73
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP Notice:  Undefined variable: id in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 88
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP   6. CategoryController->fetchImage() /home/janus/www/php-w19/core/Router.php:101
+[12-Nov-2020 00:47:21 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:73
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(88): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 73
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 00:51:01 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 00:51:03 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 00:51:57 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 00:51:59 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 00:52:25 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:73
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(89): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 73
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 00:55:14 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 00:55:16 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 00:57:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:73
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(89): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 73
+[12-Nov-2020 00:57:44 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:73
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(89): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 73
+[12-Nov-2020 00:58:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:73
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(79): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 73
+[12-Nov-2020 00:58:57 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:73
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(79): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 73
+[12-Nov-2020 01:03:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:76
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(79): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 76
+[12-Nov-2020 01:03:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:76
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(79): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 76
+[12-Nov-2020 01:07:44 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:76
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(79): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 76
+[12-Nov-2020 01:07:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:76
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php(79): Model::getById()
+#1 /home/janus/www/php-w19/core/Router.php(101): CategoryController->fetchImage()
+#2 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 76
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 09:27:33 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP Warning:  unlink(/home/janus/www/php-w19/public/assets/images/categories/): Is a directory in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 110
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP   6. CategoryController->update() /home/janus/www/php-w19/core/Router.php:101
+[12-Nov-2020 11:33:08 Europe/Kiev] PHP   7. unlink() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:110
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP Warning:  unlink(/home/janus/www/php-w19/public/assets/images/categories/): Is a directory in /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php on line 110
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP   6. CategoryController->update() /home/janus/www/php-w19/core/Router.php:101
+[12-Nov-2020 11:33:43 Europe/Kiev] PHP   7. unlink() /home/janus/www/php-w19/app/Controllers/Admin/CategoryController.php:110
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 12:53:42 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 13:22:19 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model::update(), 1 passed in /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php on line 84 and exactly 2 expected in /home/janus/www/php-w19/core/Model.php:42
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php(84): Model->update()
+#1 /home/janus/www/php-w19/core/Router.php(101): ProductController->update()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 42
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP Warning:  unlink(/home/janus/www/php-w19/public/assets/images/products/): Is a directory in /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php on line 81
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP   6. ProductController->update() /home/janus/www/php-w19/core/Router.php:101
+[12-Nov-2020 13:25:12 Europe/Kiev] PHP   7. unlink() /home/janus/www/php-w19/app/Controllers/Admin/ProductController.php:81
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-w19/app/Views/blog/index.php): failed to open stream: No such file or directory in /home/janus/www/php-w19/app/Views/layouts/site.php on line 10
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   6. include_once() /home/janus/www/php-w19/core/Router.php:88
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   7. render() /home/janus/www/php-w19/app/Controllers/BlogController.php:4
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   8. include() /home/janus/www/php-w19/bootstrap/app.php:9
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-w19/app/Views/blog/index.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-w19/app/Views/layouts/site.php on line 10
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   6. include_once() /home/janus/www/php-w19/core/Router.php:88
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   7. render() /home/janus/www/php-w19/app/Controllers/BlogController.php:4
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP   8. include() /home/janus/www/php-w19/bootstrap/app.php:9
+[12-Nov-2020 20:53:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'BlogController' not found in /home/janus/www/php-w19/core/Router.php:89
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 89
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 20:53:18 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:08:55 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:24 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:16:40 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Stack trace:
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:38
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[12-Nov-2020 21:17:31 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97

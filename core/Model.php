@@ -50,7 +50,7 @@ class Model
             implode(",", $keys), static::$pk, $id
         );
         $stmt = $this->conn->prepare($sql);
-        $stmt->execute($parameters);
+        $stmt->execute();
     }
 
     /**
@@ -59,5 +59,23 @@ class Model
     public function destroy($id){
         $stmt = $this->conn->prepare("DELETE FROM " . static::$table . " WHERE ".static::$pk."=? LIMIT 1");
         $stmt->execute([$id]);
+    }
+
+    public function lastId() 
+    {
+        $query = "SELECT id FROM " . static::$table . " ORDER BY id DESC LIMIT 1";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC)['id'];
+    }
+
+    public function getById($id){
+        // $stmt = $this->conn->prepare("SELECT * FROM ". static::$table." WHERE resource=". static::$table . " Add resource_id=?");
+        // // $stmt = $this->conn->prepare($sql);
+        // $stmt->execute([$id]);
+        $stmt = $this->conn->prepare("SELECT * FROM pictures WHERE resource='categories' And resource_id=1");
+        // $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetch();
     }
 }

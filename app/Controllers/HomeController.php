@@ -1,34 +1,35 @@
 <?php
 // HomeController.php
+require_once CORE.'/Controller.php';
+require_once MODELS.'/Category.php';
+require_once MODELS.'/Product.php';
 
-class HomeController
+class HomeController extends Controller
 {
-    // Class properties and methods go here   
-    // public function __construct()
-    // {
-    //     $title = 'Our Best Cat Members Home Page';
-    //     render('home/index', compact('title'));
-    // }
 
-    // public function index()
-    // {
-    //   $title = 'Our <b>Best Cat Members Home Page </b>';
-    //     // render('home/index', ['title'=>$title]);
-    //     render('home/index', compact('title'));
-    // }
-    public function index()
-    {
+  public function index()
+  {
       $title = 'Our <b>Best Cat Members Home Page </b>';
-      // render('home/index', ['title'=>$title]);
-      $this->render('home/index', compact('title'));
+      $this->view->render('home/index', compact('title'));
+  }
+
+    public function getProducts()
+    {
+        $products = (new Product)->all();
+        echo json_encode($products);
     }
 
-    public function render($template, $data = null, $layout='site') 
+    public function getProduct($vars)
     {
-        if ( !empty($data) ) {  
-          extract($data); 
-        }
-        $template .= '.php';
-        return require VIEWS."/layouts/${layout}.php";
+        extract($vars);
+        $product = (new Product)->getPK($id);
+        echo json_encode($product);
     }
+
+    public function getCategories()
+    {
+        $categories = (new Category)->all();
+        echo json_encode($categories);
+    }
+    
 }
