@@ -69,13 +69,10 @@ class Model
         return $stmt->fetch(PDO::FETCH_ASSOC)['id'];
     }
 
-    public function getById($id){
-        // $stmt = $this->conn->prepare("SELECT * FROM ". static::$table." WHERE resource=". static::$table . " Add resource_id=?");
-        // // $stmt = $this->conn->prepare($sql);
-        // $stmt->execute([$id]);
-        $stmt = $this->conn->prepare("SELECT * FROM pictures WHERE resource='categories' And resource_id=1");
-        // $stmt = $this->conn->prepare($sql);
+    
+    public  function getWithSql($sql){
+        $stmt = $this->conn->prepare($sql);
         $stmt->execute();
-        return $stmt->fetch();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 }

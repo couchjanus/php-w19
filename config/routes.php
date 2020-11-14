@@ -16,8 +16,6 @@ return [
    'api/categories/insert_image' => 'Admin\CategoryController@insertImage',
    'api/products/insert_image' => 'Admin\ProductController@insertImage',
    
-
-
    'admin/brands' => 'Admin\BrandController@index',
    'admin/brands/create' => 'Admin\BrandController@create',
    'admin/brands/stote' => 'Admin\BrandController@store',
@@ -36,9 +34,9 @@ return [
    
    'api/products' => 'HomeController@getProducts',
    'api/products/{id}' => 'HomeController@getProduct',
-   'api/product/{id}'=> 'HomeController@getProductItem',
+   
    'api/categories'=> 'HomeController@getCategories',
-   'api/categories/{id}'=> 'HomeController@getProductsByCategory',
+   'api/categories/count'=> 'HomeController@getCategoriesWithCount',
 
    //Главаня страница
    '' => 'HomeController@index', 

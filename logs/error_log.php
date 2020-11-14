@@ -2994,3 +2994,13 @@ Stack trace:
 #3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
 #4 {main}
   thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[14-Nov-2020 07:48:39 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/janus/www/php-w19/core/Model.php:74
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/HomeController.php(40): Model::getWithSql()
+#1 /home/janus/www/php-w19/core/Router.php(101): HomeController::getCategoriesWithCount()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(38): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 74
