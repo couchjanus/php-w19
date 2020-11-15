@@ -30,7 +30,7 @@ function dd($str, $mix){
     var_dump($mix);
     echo "<pre>";
 }
-
+require_once CORE.'/Helper.php';
 require_once CORE.'/App.php';
 $app = new App();
 define('PUBLIC_ROOT', $app->request->root());

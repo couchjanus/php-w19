@@ -399,4 +399,36 @@ class App {
         });
     }
 
+
+    // checkout__now
+    if (document.querySelector(".checkout__now")) {
+        document.querySelector(".checkout__now").addEventListener("click", () => {
+            let inCart = [];
+            // Storage.getCart()
+            app.cart.forEach(item => {
+                inCart.push({
+                id: item.id,
+                amount: item.amount
+                });
+            });
+            console.log(inCart);
+            fetch("/api/cart", {
+                method: "POST", // *GET, POST, PUT, DELETE, etc.
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                cart: inCart,
+                })
+            })
+            .then(function(response) {
+                app.clear();
+                document.location.replace("/profile");
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+        });
+    }
+
 })();

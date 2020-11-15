@@ -50,15 +50,15 @@
     <div id="login" class="modal">
         <div class="dialog">
           <a href="#close" title="Close" class="close">X</a>
-          <form class="text-center border border-light p-5 m-auto" action="#!">
+          <form class="text-center border border-light p-5 m-auto" method="POST" action="/login">
       
               <h4 class="h4 mb-4">Sign in</h4>
       
               <!-- Email -->
-              <input type="email" class="form-control mb-4" placeholder="E-mail">
+              <input type="email" name="email" class="form-control mb-4" placeholder="E-mail">
       
               <!-- Password -->
-              <input type="password" class="form-control mb-4" placeholder="Password">
+              <input type="password" name="password" class="form-control mb-4" placeholder="Password">
       
               <div class="d-flex justify-content-around">
                   <div>
@@ -92,7 +92,7 @@
         <div class="dialog">
           <a href="#close" title="Close" class="close">X</a>
           <!-- form register -->
-          <form class="text-center border border-light p-5 m-auto" action="#!">
+          <form class="text-center border border-light p-5 m-auto" method="POST" action="/register">
 
             <h4 class="h4 mb-4">Sign up</h4>
 
@@ -108,14 +108,14 @@
             </div>
 
             <!-- E-mail -->
-            <input type="email" class="form-control mb-4" placeholder="E-mail">
+            <input type="email" name="email" class="form-control mb-4" placeholder="E-mail">
 
             <!-- Password -->
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" class="form-control" placeholder="Password">
             <small class="form-text text-muted mb-4">
                 At least 8 characters and 1 digit
             </small>
-            <input type="password" class="form-control" placeholder="Confirm Password">
+            <input type="password"  name="confirmpassword" class="form-control" placeholder="Confirm Password">
             <small class="form-text text-muted mb-4">
                 Retype password again
             </small>

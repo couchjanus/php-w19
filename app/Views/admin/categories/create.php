@@ -5,7 +5,7 @@
             <i class="fa fa-table"></i> <?php echo $title;?> <a href="/admin/categories" class="float-right"><button class="btn btn-primary text-right"><span data-feather="arrow-left-circle"></span> Go Back</button></a>
         </div>
         <div class="card-body">
-            <form action="/admin/categories/stote" method="POST" enctype="multipart/form-data">
+            <form action="/admin/categories/store" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" aria-describedby="categoryHelp" placeholder="Enter Category Name" required>

@@ -1,12 +1,15 @@
 <?php
 require_once CORE.'/Request.php';
 require_once CORE.'/Router.php';
+require_once CORE.'/Session.php';
 
 class App {
 
     public $request = null;
     
     public function __construct(){
+        // Запускаем сессию
+        Session::init();
         $this->request = new Request();
     }
 

@@ -3004,3 +3004,375 @@ Stack trace:
 #5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
 #6 {main}
   thrown in /home/janus/www/php-w19/core/Model.php on line 74
+[14-Nov-2020 17:28:16 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=3' at line 1 in /home/janus/www/php-w19/core/Model.php:25
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(25): PDO->prepare()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/RoleController.php(47): Model->getByPK()
+#2 /home/janus/www/php-w19/core/Router.php(101): RoleController->edit()
+#3 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 25
+[14-Nov-2020 17:30:07 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=2' at line 1 in /home/janus/www/php-w19/core/Model.php:25
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(25): PDO->prepare()
+#1 /home/janus/www/php-w19/app/Controllers/Admin/RoleController.php(47): Model->getByPK()
+#2 /home/janus/www/php-w19/core/Router.php(101): RoleController->edit()
+#3 /home/janus/www/php-w19/core/Router.php(67): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 25
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[14-Nov-2020 17:40:13 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Notice:  Undefined index: password in /home/janus/www/php-w19/app/Controllers/RegisterController.php on line 23
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   6. RegisterController->signup() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Notice:  Undefined index: confirmpassword in /home/janus/www/php-w19/app/Controllers/RegisterController.php on line 24
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   6. RegisterController->signup() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Notice:  Undefined index: email in /home/janus/www/php-w19/app/Controllers/RegisterController.php on line 27
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   6. RegisterController->signup() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/app/Controllers/RegisterController.php on line 27
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   6. RegisterController->signup() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Notice:  Undefined index: email in /home/janus/www/php-w19/app/Controllers/RegisterController.php on line 29
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:26:16 Europe/Kiev] PHP   6. RegisterController->signup() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:26:17 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null in /home/janus/www/php-w19/core/Model.php:39
+Stack trace:
+#0 /home/janus/www/php-w19/core/Model.php(39): PDOStatement->execute()
+#1 /home/janus/www/php-w19/app/Controllers/RegisterController.php(29): Model->save()
+#2 /home/janus/www/php-w19/core/Router.php(101): RegisterController->signup()
+#3 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#4 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#5 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#6 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-w19/core/Model.php on line 39
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[14-Nov-2020 20:29:17 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[14-Nov-2020 20:30:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Model::getOne() in /home/janus/www/php-w19/app/Models/User.php:21
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/LoginController.php(33): User::checkUser()
+#1 /home/janus/www/php-w19/core/Router.php(101): LoginController->signin()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/app/Models/User.php on line 21
+[14-Nov-2020 20:37:26 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Model::getOne() in /home/janus/www/php-w19/app/Models/User.php:21
+Stack trace:
+#0 /home/janus/www/php-w19/app/Controllers/LoginController.php(33): User::checkUser()
+#1 /home/janus/www/php-w19/core/Router.php(101): LoginController->signin()
+#2 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#3 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#4 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#5 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-w19/app/Models/User.php on line 21
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Models/User.php on line 25
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   7. User->checkUser() /home/janus/www/php-w19/app/Controllers/LoginController.php:33
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-w19/core/Router.php on line 70
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-w19/core/Router.php on line 76
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP   5. Router->getController() /home/janus/www/php-w19/core/Router.php:70
+[14-Nov-2020 20:40:00 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(70): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Models/User.php on line 25
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:41:05 Europe/Kiev] PHP   7. User->checkUser() /home/janus/www/php-w19/app/Controllers/LoginController.php:33
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Models/User.php on line 25
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:41:47 Europe/Kiev] PHP   7. User->checkUser() /home/janus/www/php-w19/app/Controllers/LoginController.php:33
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Models/User.php on line 25
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:44:21 Europe/Kiev] PHP   7. User->checkUser() /home/janus/www/php-w19/app/Controllers/LoginController.php:33
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Models/User.php on line 25
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:45:49 Europe/Kiev] PHP   7. User->checkUser() /home/janus/www/php-w19/app/Controllers/LoginController.php:34
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Models/User.php on line 25
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 20:57:04 Europe/Kiev] PHP   7. User->checkUser() /home/janus/www/php-w19/app/Controllers/LoginController.php:34
+[14-Nov-2020 21:04:07 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method User::checkUser() in /home/janus/www/php-w19/app/Controllers/LoginController.php:58
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(101): LoginController->signin()
+#1 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#2 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#3 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#4 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 58
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 37
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:06:03 Europe/Kiev] PHP   7. LoginController->checkUser() /home/janus/www/php-w19/app/Controllers/LoginController.php:56
+[14-Nov-2020 21:11:11 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class Request could not be converted to string in /home/janus/www/php-w19/app/Controllers/LoginController.php:56
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(101): LoginController->signin()
+#1 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#2 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#3 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#4 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 56
+[14-Nov-2020 21:12:17 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 59
+[14-Nov-2020 21:12:17 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:12:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:12:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:12:17 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:12:17 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:12:17 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:12:17 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:14:28 Europe/Kiev] PHP Notice:  Undefined index: password in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 62
+[14-Nov-2020 21:14:28 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:14:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:14:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:14:28 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:14:28 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:14:28 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:14:28 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:15:56 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 60
+[14-Nov-2020 21:15:56 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:15:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:15:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:15:56 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:15:56 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:15:56 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:15:56 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:17:01 Europe/Kiev] PHP Notice:  Undefined index: password in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 60
+[14-Nov-2020 21:17:01 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:17:01 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:17:01 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:17:01 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:17:01 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:17:01 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:17:01 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:19:11 Europe/Kiev] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/janus/www/php-w19/app/Controllers/LoginController.php:59
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(101): LoginController->signin()
+#1 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#2 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#3 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#4 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 59
+[14-Nov-2020 21:20:08 Europe/Kiev] PHP Notice:  Undefined index: remember_me in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 82
+[14-Nov-2020 21:20:08 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:20:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:20:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:20:08 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:20:08 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:20:08 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:20:08 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-w19/app/Views/layouts/partials/_flash-message.php): failed to open stream: No such file or directory in /home/janus/www/php-w19/app/Views/profile/index.php on line 12
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   6. ProfileController->index() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/ProfileController.php:34
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/site.php:9
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home/janus/www/php-w19/app/Views/layouts/partials/_flash-message.php' (include_path='.:/usr/share/php') in /home/janus/www/php-w19/app/Views/profile/index.php on line 12
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   6. ProfileController->index() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/ProfileController.php:34
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[14-Nov-2020 21:20:09 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/site.php:9
+[14-Nov-2020 21:43:37 Europe/Kiev] PHP Notice:  Undefined index: remember_me in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 78
+[14-Nov-2020 21:43:37 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:43:37 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:43:37 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:43:37 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:43:37 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:43:37 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:43:37 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/profile/_profile.php on line 10
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   6. ProfileController->index() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/ProfileController.php:30
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/site.php:9
+[14-Nov-2020 21:43:57 Europe/Kiev] PHP  10. require_once() /home/janus/www/php-w19/app/Views/profile/index.php:5
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in /home/janus/www/php-w19/app/Views/profile/_profile.php on line 10
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   6. ProfileController->index() /home/janus/www/php-w19/core/Router.php:101
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   7. View->render() /home/janus/www/php-w19/app/Controllers/ProfileController.php:33
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   8. require() /home/janus/www/php-w19/core/View.php:35
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP   9. include() /home/janus/www/php-w19/app/Views/layouts/site.php:9
+[14-Nov-2020 21:46:20 Europe/Kiev] PHP  10. require_once() /home/janus/www/php-w19/app/Views/profile/index.php:5
+[14-Nov-2020 21:46:26 Europe/Kiev] PHP Notice:  Undefined index: remember_me in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 78
+[14-Nov-2020 21:46:26 Europe/Kiev] PHP Stack trace:
+[14-Nov-2020 21:46:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[14-Nov-2020 21:46:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[14-Nov-2020 21:46:26 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[14-Nov-2020 21:46:26 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[14-Nov-2020 21:46:26 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[14-Nov-2020 21:46:26 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[15-Nov-2020 08:12:40 Europe/Kiev] PHP Notice:  Undefined index: remember_me in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 69
+[15-Nov-2020 08:12:40 Europe/Kiev] PHP Stack trace:
+[15-Nov-2020 08:12:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[15-Nov-2020 08:12:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[15-Nov-2020 08:12:40 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[15-Nov-2020 08:12:40 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[15-Nov-2020 08:12:40 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[15-Nov-2020 08:12:40 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[15-Nov-2020 08:31:04 Europe/Kiev] PHP Notice:  Undefined index: remember_me in /home/janus/www/php-w19/app/Controllers/LoginController.php on line 69
+[15-Nov-2020 08:31:04 Europe/Kiev] PHP Stack trace:
+[15-Nov-2020 08:31:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-w19/public/index.php:0
+[15-Nov-2020 08:31:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-w19/public/index.php:12
+[15-Nov-2020 08:31:04 Europe/Kiev] PHP   3. App->run() /home/janus/www/php-w19/bootstrap/app.php:37
+[15-Nov-2020 08:31:04 Europe/Kiev] PHP   4. Router->run() /home/janus/www/php-w19/core/App.php:41
+[15-Nov-2020 08:31:04 Europe/Kiev] PHP   5. Router->init() /home/janus/www/php-w19/core/Router.php:58
+[15-Nov-2020 08:31:04 Europe/Kiev] PHP   6. LoginController->signin() /home/janus/www/php-w19/core/Router.php:101
+[15-Nov-2020 08:31:17 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-w19/app/Controllers/OrderController.php does not exists. in /home/janus/www/php-w19/core/Router.php:97
+Stack trace:
+#0 /home/janus/www/php-w19/core/Router.php(58): Router->init()
+#1 /home/janus/www/php-w19/core/App.php(41): Router->run()
+#2 /home/janus/www/php-w19/bootstrap/app.php(37): App->run()
+#3 /home/janus/www/php-w19/public/index.php(12): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-w19/core/Router.php on line 97
