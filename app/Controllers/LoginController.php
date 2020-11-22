@@ -64,6 +64,7 @@ class LoginController extends Auth
             $this->message = "You Are Logged";
             Session::set('message', $this->message);
             Session::set('userId', $this->user->id);
+            // Устанавливаем Cookie 'Logged' со значением $this->logged_in: 
             setcookie($this->cookie_prefix.'Logged', $this->logged_in); 
  
             $remember_me = $this->request->data['remember_me'] ? 1:0;

@@ -3,7 +3,7 @@
 class Helper{
 
     public static function asset($dir, $file){
-        return $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR.'assets/images/'.$dir.DIRECTORY_SEPARATOR.$file;
+        return $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR.'assets'. DIRECTORY_SEPARATOR.$dir.DIRECTORY_SEPARATOR.$file;
     }
 
     public static function isGuest()

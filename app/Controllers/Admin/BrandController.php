@@ -23,7 +23,11 @@ class BrandController extends Controller
     public function store()
     {
         $status = $this->request->data['status'] ? 1:0;
-        (new Brand())->save(['name'=>$this->request->data['name'], 'description'=>$this->request->data['description'], 'status'=>$status]);
+        (new Brand())->save([
+            'name'=>$this->request->data['name'], 
+            'description'=>$this->request->data['description'], 
+            'status'=>$status
+        ]);
         $this->redirector->redirect("/admin/brands");
     }
 

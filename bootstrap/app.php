@@ -32,6 +32,21 @@ function dd($str, $mix){
 }
 require_once CORE.'/Helper.php';
 require_once CORE.'/App.php';
+
+
+// spl_autoload_register(function($class) {
+//     $file = CORE.'/'.$class.EXT;
+//     if(is_file($file)) {
+//         require_once $file;
+//     }
+
+//     $filename = MODELS. '/' . $class . EXT;
+//     if (file_exists($filename)) {
+//         include_once $filename;
+//     }
+// });
+
+
 $app = new App();
 define('PUBLIC_ROOT', $app->request->root());
 $app->run();

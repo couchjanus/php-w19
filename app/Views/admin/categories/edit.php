@@ -2,10 +2,10 @@
             
     <div class="card">
         <div class="card-header bg-primary text-white">
-            <i class="fa fa-table"></i> <?php echo $title;?> <a href="/admin/categories" class="float-right"><button class="btn btn-primary text-right"><span data-feather="arrow-left-circle"></span> Go Back</button></a>
+            <i class="fa fa-table"></i> <?=$title?> <a href="/admin/categories" class="float-right"><button class="btn btn-primary text-right"><span data-feather="arrow-left-circle"></span> Go Back</button></a>
         </div>
         <div class="card-body">
-            <form action="/admin/categories/update" method="POST">
+            <form action="/admin/categories/update" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?=$category->id;?>">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -26,23 +26,19 @@
                                 <label for="title">Change Image:</label>
                             </div>
                             <div class="card-body text-success">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input type="file" id="insert_image" multiple accept="image/*"
-                                            name="image">
-                                    </div>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="col-md-12" id="store_image">
+                                <div class="row" id="store_image">
                                     <input type="hidden" name="file_name" value="<?=$category->image?>">
                                     <div class="col-md-2" style="margin-bottom:16px;">
-                                    <img src="/assets/images/categories/<?=$category->image?>" class="img-thumbnail" />
+                                        <img src="/assets/images/categories/<?=$category->image?>" />
                                     </div>
+                                    <div class="col-md-2" style="margin-bottom:16px;">
+                                        <img id="file-image" src="#" alt="Preview" class="hidden img-thumbnail" width=200>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer bg-transparent border-success">Footer</div>
+                            <div class="card-footer bg-transparent border-success">
+                                <input type="file" id="insert_image" multiple accept="image/*" name="image" onchange="//readURL(this, 'file-image');">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,29 +51,4 @@
     </div>
         
 </div>
-<div id="insertimageModal" class="modal" role="dialog">
- <div class="modal-dialog">
-  <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Crop & Insert Image</h4>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-md-8 text-center">
-            <div id="image_crop" style="width:350px; margin-top:30px"></div>
-          </div>
-          <div class="col-md-4" style="padding-top:30px;">
-        <br />
-        <br />
-        <br/>
-            <button class="btn btn-success crop_image" data-model="categories">Crop & Insert Image</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+<?php require_once VIEWS.'/admin/partials/_modal_crop.php'; ?>

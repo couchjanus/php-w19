@@ -5,7 +5,7 @@
             <i class="fa fa-table"></i> <?php echo $title;?> <a href="/admin/brands" class="btn btn-info float-right"><span data-feather="arrow-left-circle"></span> Go Back</a>
         </div>
         <div class="card-body">
-            <form action="/admin/brands/stote" method="POST">
+            <form action="/admin/brands/store" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" aria-describedby="brandHelp" placeholder="Enter brand Name" required>

@@ -8,7 +8,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/orders">
+                <a class="nav-link" href="#">
                     <span data-feather="file"></span>
                     Orders
                 </a>
@@ -32,15 +32,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/users">
+                <a class="nav-link" href="#">
                     <span data-feather="users"></span>
                     Customers
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/admin/roles">
-                    <span data-feather="users"></span>
-                    Roles
                 </a>
             </li>
             <li class="nav-item">

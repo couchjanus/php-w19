@@ -10,5 +10,5 @@ class Product extends Model
     public static function getResource() {
         return self::$table;
     }
-   
+    
 }

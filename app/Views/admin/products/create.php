@@ -5,7 +5,7 @@
             <i class="fa fa-table"></i> <?php echo $title;?> <a href="/admin/products" class="float-right"><button class="btn btn-primary text-right"><span data-feather="arrow-left-circle"></span> Go Back</button></a>
         </div>
         <div class="card-body">
-            <form action="/admin/products/stote" method="POST">
+            <form action="/admin/products/store" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" aria-describedby="productHelp" placeholder="Enter product Name" required>
@@ -90,31 +90,4 @@
         
 </div>
 
-<div id="insertimageModal" class="modal" role="dialog">
- <div class="modal-dialog">
-  <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Crop & Insert Image</h4>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-md-8 text-center">
-            <div id="image_crop" style="width:350px; margin-top:30px"></div>
-          </div>
-          <div class="col-md-4" style="padding-top:30px;">
-        <br />
-        <br />
-        <br/>
-            <button class="btn btn-success crop_image" data-model="products">Crop & Insert Image</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+<?php require_once VIEWS.'/admin/partials/_modal_crop.php'; ?>

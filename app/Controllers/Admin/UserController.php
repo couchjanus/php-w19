@@ -37,7 +37,7 @@ class UserController extends Controller
         $roles = (new Role)->all();
         $this->view->render('admin/users/create', compact('title', 'roles'), 'admin');
     }
-
+// 
     public function store()
     {
         $hash = password_hash($this->request->data['password'], PASSWORD_BCRYPT, $this->costs);

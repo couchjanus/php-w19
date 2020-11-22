@@ -62,7 +62,10 @@ class OrderController extends Controller
                 throw new Exception('Failed to decode JSON object');
             }
             $productsInCart = json_encode($decoded['cart']);
-            (new Order)->save(["user_id"=>$this->user->id, "products"=>$productsInCart]);
+            (new Order)->save([
+                    "user_id"=>$this->user->id, 
+                    "products"=>$productsInCart
+                ]);
             echo json_encode($options);
         }
     }

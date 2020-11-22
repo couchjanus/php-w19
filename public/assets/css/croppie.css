@@ -1,5 +1,3 @@
-/*view-source:http://demo.webslesson.info/image-crop-save-database/croppie.css*/
-
 .croppie-container {
     width: 100%;
     height: 100%;
@@ -245,8 +243,8 @@ background: #ccc;
 	font-size: 22px;
 }
 .cr-rotate-l i:before {
-	content: 'â†º';
+	content: '↺';
 }
 .cr-rotate-r i:before {
-	content: 'â†»';
+	content: '↻';
 }

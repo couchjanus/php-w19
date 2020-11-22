@@ -6,7 +6,6 @@ class Request
     public $query = [];
    
     public function __construct() {
-        // $this->data = $this->cleanInput($_REQUEST);
         $this->data = $this->mergeData($_REQUEST, $_FILES);   
     }
 

@@ -8,6 +8,8 @@ class App {
     public $request = null;
     
     public function __construct(){
+        // включаем буфер
+        ob_start();
         // Запускаем сессию
         Session::init();
         $this->request = new Request();

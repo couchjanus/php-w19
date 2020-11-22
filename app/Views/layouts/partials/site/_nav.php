@@ -9,16 +9,16 @@
                 <div class="navbar-links effect-brackets">
                     <ul class="navbar-nav">
                         <li>
-                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="/" class="nav-link">Home</a>
                         </li>
                         <li>
-                            <a href="shop.html" class="nav-link">Shop</a>
+                            <a href="/shop" class="nav-link">Shop</a>
                         </li>
                         <li>
-                            <a href="blog.html" class="nav-link">Blog</a>
+                            <a href="/blog" class="nav-link">Blog</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="nav-link">Contact</a>
+                            <a href="/contact" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -30,9 +30,18 @@
                     <li>
                         <a class="" href="#"><i class="far fa-heart"></i><small class="text-gray like-me"></small></a>
                     </li>
+                    <?php if (Helper::isGuest()) :?>
                     <li>
                         <a class="" href="#login"><i class="fas fa-user-alt text-gray"></i></a>
                     </li>
+                    <?php else :?>
+                        <li>
+                            <a href="/profile" title="User Profile"><i class="fas fa-address-card"></i></a>
+                        </li>
+                        <li>
+                            <a href="/logout" title="Sign Out"><i class="fas fa-sign-out-alt"></i></a>
+                        </li>
+                    <?php endif;?>
                 </ul>
                 
                 <label for="hamburger">
